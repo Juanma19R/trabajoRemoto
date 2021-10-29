@@ -1,0 +1,381 @@
+/* npm run watch-css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap');
+
+@import "variables";
+
+/*Default*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Sen', sans-serif;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+}
+/*Nav*/
+.navbar__collapse{
+    font-size: $parrafos;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding-right: 4rem;
+    color: $color-letras;
+}
+.navbar__nav{
+    a{
+        color: $color-letras;
+    }
+}
+.navbar__toggler{
+    border-color: #fff;
+    &--icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+.logo__Nav {
+    width: 140px;
+    height: 140px;
+}
+/*Index*/
+.container__mainIndex {
+    text-align: center;
+    h1{
+        font-size: $titulos;
+        margin-top: 5rem;
+        color: $color-letras;
+    }
+    p{
+        padding-top: 2rem;
+        color: $color-letras;
+        font-size: $parrafos;
+    }
+}
+.mainIndex__separador {
+    height: 0.5rem;
+    max-width: 20rem;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    background-color: #fff;
+}
+.container__sectionIndex{
+    margin-top: 5rem;
+    p{
+        font-size: $parrafos;
+        color: $color-letras;
+    }
+}
+.sectionIndex__button {
+    text-align: center;
+}
+.container__sectionCards{
+    margin-top: 10rem;
+}
+.sectionCards_card{
+    background: #0083b0; 
+    border: none;
+    h5{
+        color: $color-letras;
+        font-size: $subtitulos;
+        text-align: center;
+    }
+    p{
+        font-size: $parrafos;
+        text-align: center;
+        color: $color-letras;
+    }
+    .btn{
+        margin-left: 6rem;
+        margin-right: 6rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card__badge{
+        background: green;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        background: $color-secundario;
+    }
+    .sectionCards_card{
+        background: $color-principal;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        background: $color-principal;
+    }
+    .sectionCards_card{
+        background: $color-secundario;
+    }
+}
+/*Seccion Empleos*/
+.container__tablaOfertas{
+    h1{
+        text-align: center;
+        font-size: $titulos;
+        color: $color-letras;
+    }
+    p{
+        text-align: center;
+        font-size: $parrafos;
+        color: $color-letras;
+    }
+}
+.container__tabla{
+    font-size: 1.3rem;
+    color: $color-letras;
+    margin-top: 5rem;
+    thead{
+        background: $color-secundario;
+    }
+}
+.section__tips{
+    margin-top: 6rem;
+}
+.container__tips{
+    h2{
+        text-align: center;
+        color: $color-letras;
+        font-size: $subtitulos;
+        margin-bottom: 2rem;
+    }
+}
+.tips__accordion{
+    color: $color-letras;
+    font-size: $subtitulos/2;
+    background: transparent;
+    border: none;
+    .accordion__button{
+        font-size: ($subtitulos/2)-0.2;
+        color: $color-letras;
+        background: $color-secundario;
+    }
+}
+.container__casosExito{
+    h3{
+        text-align: center;
+        font-size: $subtitulos;
+        color: $color-letras;
+        margin: 4rem;
+    }
+    p{
+        font-size: $parrafos;
+        color: $color-letras;
+        margin-top: 4rem;
+    }
+}
+@for $i from 1 to 4 {
+	.caso-#{$i} { width: 45rem * $i; }
+}
+/*Seccion Empleadores*/
+.container__empleadores{
+    h1{
+        text-align: center;
+        font-size: $titulos;
+        margin-bottom: 5rem;
+        color: $color-letras;
+    }
+} 
+.empleadores_clearfix{
+    img{
+        width: 500px;
+        height: 500px;
+    }
+    p{
+        font-size: $parrafos;
+        color: $color-letras;
+    }
+} 
+.container_formEmpleador{
+    h2{
+        text-align: center;
+        font-size: $subtitulos;
+        color: $color-letras;
+    }
+}
+.containerForm__empleador{
+    p{
+        font-size: $parrafos;
+        color: $color-letras;
+    }
+}
+.containerForm__labels{
+    font-size: ($subtitulos/2)-0.2;
+    color: $color-letras;
+}
+.formEmpleador__checkbox{
+    font-size: ($subtitulos/2)-0.2;
+}
+.containerForm__textArea{
+    color: #000;
+}
+/*Sección Nosotros*/
+.container__titulo{
+    h1{
+        text-align: center;
+        font-size: $titulos;
+        color: $color-letras;
+    }
+    p{
+        text-align: center;
+        font-size: $parrafos;
+        margin: 3rem;
+        color: $color-letras;
+    }
+}
+.container__team{
+    h2{
+        font-size: $subtitulos;
+        text-align: center;
+        color: $color-letras;
+        margin: 3rem;
+    }
+}
+.team__cards{
+    &--size{
+        width: 350px;
+        height: 350px;
+    }
+    &--background{
+        background-color: $color-secundario;
+    }
+    h2{
+        text-align: center;
+        font-size: $subtitulos;
+        margin-bottom: 5rem;
+    }
+    p{
+        text-align: center;
+        color: $color-letras;
+        font-size: $parrafos;
+    }
+}
+.card__info{
+    h5{
+        font-size: $parrafos+0.5;
+        color: $color-letras;
+        text-align: center;
+    }
+    p{
+        font-size: $subtitulos/2;
+        color: $color-letras;
+    }
+}
+.container_sectionContacto {
+    margin-top: 4rem;
+    font-size: $subtitulos/2;
+}
+.container__form{
+    color: $color-letras;
+    h3{
+        font-size: $subtitulos;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+.form__checkbox{
+    margin: 1rem;
+}
+.container__mapa{
+    text-align: center;
+    color: $color-letras;
+    h3{
+        font-size: $subtitulos;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+.mapa__iframe{
+    width: 400px;
+    height: 250px;
+}
+.container__seccionRedes{
+    color: $color-letras;
+    h4{
+        font-size: $parrafos +0.5;
+    }
+    a{
+        font-size: $parrafos -1;
+    }
+}
+$colors: (
+    color1: blue,
+    color2: green,
+    color3: white,
+);
+@each $key, $value in $colors{
+    .#{$value}-red{
+        color: $value;
+        height: 3rem;
+    }
+}
+/*Seccion Blog*/
+.container_blogHead{
+    text-align: center;
+    h1{
+        font-size: $titulos;
+        color: $color-letras;
+    }
+    p{
+        font-size: $parrafos;
+        margin: 3rem;
+        color: $color-letras;
+    }
+}
+.container__cardGroup{
+    margin-top: 5rem;
+    .card{
+        background-color: $color-secundario;
+        text-align: center;
+    }
+}
+.cardGroup_card{
+    h5{
+        font-size: $subtitulos;
+        color: $color-letras;
+    }
+    p{
+        font-size: $subtitulos/2;
+        color: $color-letras;
+    }
+    ol{
+        text-align: center;
+        color: $color-letras;
+        font-size: $subtitulos/2;
+    }
+}
+.cardGoup__textoFooter{
+    font-size: $parrafos -1;
+}
+/*Error 404*/
+.container__error404{
+    img{
+        height: 1000px;
+        width: 1000px;
+    }
+}
+/*Footer*/
+.container__footer{
+    img{
+        position: absolute;
+        left: 0;
+        height: 130px;
+        width: 130px;
+    }
+    ul{
+        list-style-type: none;
+        text-align: right;
+        font-size: $parrafos;
+        padding: 2rem;
+    }
+    a{
+        color: $color-letras;
+        text-decoration: none;
+    }
+}

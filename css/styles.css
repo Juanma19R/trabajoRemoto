@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* npm run watch-css */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap");
+/*Default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Sen', sans-serif;
+  background: linear-gradient(to right, #00b4db, #0083b0); }
+
+/*Nav*/
+.navbar__collapse {
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem;
+  padding-right: 4rem;
+  color: #fff; }
+
+.navbar__nav a {
+  color: #fff; }
+
+.navbar__toggler {
+  border-color: #fff; }
+  .navbar__toggler--icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.logo__Nav {
+  width: 140px;
+  height: 140px; }
+
+/*Index*/
+.container__mainIndex {
+  text-align: center; }
+  .container__mainIndex h1 {
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: #fff; }
+  .container__mainIndex p {
+    padding-top: 2rem;
+    color: #fff;
+    font-size: 2rem; }
+
+.mainIndex__separador {
+  height: 0.5rem;
+  max-width: 20rem;
+  margin: 2rem auto;
+  margin-top: 5rem;
+  background-color: #fff; }
+
+.container__sectionIndex {
+  margin-top: 5rem; }
+  .container__sectionIndex p {
+    font-size: 2rem;
+    color: #fff; }
+
+.sectionIndex__button {
+  text-align: center; }
+
+.container__sectionCards {
+  margin-top: 10rem; }
+
+.sectionCards_card {
+  background: #0083b0;
+  border: none; }
+  .sectionCards_card h5 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center; }
+  .sectionCards_card p {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff; }
+  .sectionCards_card .btn {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: center; }
+  .sectionCards_card .card__badge {
+    background: green;
+    font-size: 1.5rem; }
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #0083b0; }
+  .sectionCards_card {
+    background: #00b4db; } }
+
+@media screen and (max-width: 375px) {
+  body {
+    background: #00b4db; }
+  .sectionCards_card {
+    background: #0083b0; } }
+
+/*Seccion Empleos*/
+.container__tablaOfertas h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff; }
+
+.container__tablaOfertas p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff; }
+
+.container__tabla {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 5rem; }
+  .container__tabla thead {
+    background: #0083b0; }
+
+.section__tips {
+  margin-top: 6rem; }
+
+.container__tips h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.tips__accordion {
+  color: #fff;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none; }
+  .tips__accordion .accordion__button {
+    font-size: 1.3rem;
+    color: #fff;
+    background: #0083b0; }
+
+.container__casosExito h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin: 4rem; }
+
+.container__casosExito p {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 4rem; }
+
+.caso-1 {
+  width: 45rem; }
+
+.caso-2 {
+  width: 90rem; }
+
+.caso-3 {
+  width: 135rem; }
+
+/*Seccion Empleadores*/
+.container__empleadores h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  color: #fff; }
+
+.empleadores_clearfix img {
+  width: 500px;
+  height: 500px; }
+
+.empleadores_clearfix p {
+  font-size: 2rem;
+  color: #fff; }
+
+.container_formEmpleador h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff; }
+
+.containerForm__empleador p {
+  font-size: 2rem;
+  color: #fff; }
+
+.containerForm__labels {
+  font-size: 1.3rem;
+  color: #fff; }
+
+.formEmpleador__checkbox {
+  font-size: 1.3rem; }
+
+.containerForm__textArea {
+  color: #000; }
+
+/*Sección Nosotros*/
+.container__titulo h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff; }
+
+.container__titulo p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+  color: #fff; }
+
+.container__team h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin: 3rem; }
+
+.team__cards--size {
+  width: 350px;
+  height: 350px; }
+
+.team__cards--background {
+  background-color: #0083b0; }
+
+.team__cards h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem; }
+
+.team__cards p {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem; }
+
+.card__info h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center; }
+
+.card__info p {
+  font-size: 1.5rem;
+  color: #fff; }
+
+.container_sectionContacto {
+  margin-top: 4rem;
+  font-size: 1.5rem; }
+
+.container__form {
+  color: #fff; }
+  .container__form h3 {
+    font-size: 3rem;
+    margin: 2rem;
+    text-align: center; }
+
+.form__checkbox {
+  margin: 1rem; }
+
+.container__mapa {
+  text-align: center;
+  color: #fff; }
+  .container__mapa h3 {
+    font-size: 3rem;
+    margin: 2rem;
+    text-align: center; }
+
+.mapa__iframe {
+  width: 400px;
+  height: 250px; }
+
+.container__seccionRedes {
+  color: #fff; }
+  .container__seccionRedes h4 {
+    font-size: 2.5rem; }
+  .container__seccionRedes a {
+    font-size: 2rem -1; }
+
+.blue-red {
+  color: blue;
+  height: 3rem; }
+
+.green-red {
+  color: green;
+  height: 3rem; }
+
+.white-red {
+  color: white;
+  height: 3rem; }
+
+/*Seccion Blog*/
+.container_blogHead {
+  text-align: center; }
+  .container_blogHead h1 {
+    font-size: 4rem;
+    color: #fff; }
+  .container_blogHead p {
+    font-size: 2rem;
+    margin: 3rem;
+    color: #fff; }
+
+.container__cardGroup {
+  margin-top: 5rem; }
+  .container__cardGroup .card {
+    background-color: #0083b0;
+    text-align: center; }
+
+.cardGroup_card h5 {
+  font-size: 3rem;
+  color: #fff; }
+
+.cardGroup_card p {
+  font-size: 1.5rem;
+  color: #fff; }
+
+.cardGroup_card ol {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem; }
+
+.cardGoup__textoFooter {
+  font-size: 2rem -1; }
+
+/*Error 404*/
+.container__error404 img {
+  height: 1000px;
+  width: 1000px; }
+
+/*Footer*/
+.container__footer img {
+  position: absolute;
+  left: 0;
+  height: 130px;
+  width: 130px; }
+
+.container__footer ul {
+  list-style-type: none;
+  text-align: right;
+  font-size: 2rem;
+  padding: 2rem; }
+
+.container__footer a {
+  color: #fff;
+  text-decoration: none; }
