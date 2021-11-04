@@ -37,6 +37,7 @@ body{
     }
 }
 .logo__Nav {
+    right: 0;
     width: 140px;
     height: 140px;
 }
@@ -170,8 +171,26 @@ body{
         margin-top: 4rem;
     }
 }
-@for $i from 1 to 4 {
-	.caso-#{$i} { width: 45rem * $i; }
+@media screen and (max-width: 768px) {
+    body{
+        background: $color-principal;
+    }
+    .accordion__button{
+        background: $color-secundario;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        background: $color-principal;
+    }
+    .accordion__button{
+        background: $color-secundario;
+    }
+    .container__casosExito{
+        p{
+            font-size: $parrafos;
+        }
+    }
 }
 /*Seccion Empleadores*/
 .container__empleadores{
@@ -315,6 +334,7 @@ $colors: (
         height: 3rem;
     }
 }
+
 /*Seccion Blog*/
 .container_blogHead{
     text-align: center;

@@ -32,6 +32,7 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .logo__Nav {
+  right: 0;
   width: 140px;
   height: 140px; }
 
@@ -146,14 +147,19 @@ body {
   color: #fff;
   margin-top: 4rem; }
 
-.caso-1 {
-  width: 45rem; }
+@media screen and (max-width: 768px) {
+  body {
+    background: #00b4db; }
+  .accordion__button {
+    background: #0083b0; } }
 
-.caso-2 {
-  width: 90rem; }
-
-.caso-3 {
-  width: 135rem; }
+@media screen and (max-width: 375px) {
+  body {
+    background: #00b4db; }
+  .accordion__button {
+    background: #0083b0; }
+  .container__casosExito p {
+    font-size: 2rem; } }
 
 /*Seccion Empleadores*/
 .container__empleadores h1 {
