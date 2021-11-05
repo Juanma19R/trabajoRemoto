@@ -162,17 +162,13 @@ body {
     font-size: 2rem; } }
 
 /*Seccion Empleadores*/
-.container__empleadores h1 {
+.empleadores__Main h1 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 5rem;
   color: #fff; }
 
-.empleadores_clearfix img {
-  width: 500px;
-  height: 500px; }
-
-.empleadores_clearfix p {
+.empleadores__clearfix p {
   font-size: 2rem;
   color: #fff; }
 

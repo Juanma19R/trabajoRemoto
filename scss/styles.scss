@@ -193,7 +193,7 @@ body{
     }
 }
 /*Seccion Empleadores*/
-.container__empleadores{
+.empleadores__Main{
     h1{
         text-align: center;
         font-size: $titulos;
@@ -201,11 +201,7 @@ body{
         color: $color-letras;
     }
 } 
-.empleadores_clearfix{
-    img{
-        width: 500px;
-        height: 500px;
-    }
+.empleadores__clearfix{
     p{
         font-size: $parrafos;
         color: $color-letras;
