@@ -63,6 +63,8 @@ body {
 
 .sectionIndex__button {
   text-align: center; }
+  .sectionIndex__button a {
+    margin: 2rem; }
 
 .container__sectionCards {
   margin-top: 10rem; }
