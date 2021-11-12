@@ -70,10 +70,19 @@ body{
         color: $color-letras;
     }
 }
+.clearfix{
+    img{
+        height: 500px;
+        width: 500px;
+    }
+}
 .sectionIndex__button {
     text-align: center;
     a{
         margin: 2rem;
+        height: 45px;
+        width: 170px;
+        font-size: $parrafos;
     }
 }
 .container__sectionCards{
@@ -133,11 +142,14 @@ body{
     }
 }
 .container__tabla{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: $color-letras;
     margin-top: 5rem;
     thead{
         background: $color-secundario;
+    }
+    .btn{
+        font-size: 1.2rem;
     }
 }
 .section__tips{
@@ -153,11 +165,17 @@ body{
 }
 .tips__accordion{
     color: $color-letras;
-    font-size: $subtitulos/2;
+    font-size: $parrafos;
     background: transparent;
     border: none;
+    .accordion__body{
+        font-size: 1.7rem;
+        a{
+            color: $color-letras;
+        }
+    }
     .accordion__button{
-        font-size: ($subtitulos/2)-0.2;
+        font-size: $parrafos;
         color: $color-letras;
         background: $color-secundario;
     }
@@ -169,10 +187,16 @@ body{
         color: $color-letras;
         margin: 4rem;
     }
+    h5{
+        text-align: center;
+        font-size: $subtitulos;
+        color: $color-letras;
+        background: $color-secundario;
+    }
     p{
         font-size: $parrafos;
         color: $color-letras;
-        margin-top: 4rem;
+        background: $color-secundario;
     }
 }
 @media screen and (max-width: 768px) {

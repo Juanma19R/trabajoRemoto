@@ -62,10 +62,17 @@ body {
     font-size: 2rem;
     color: #fff; }
 
+.clearfix img {
+  height: 500px;
+  width: 500px; }
+
 .sectionIndex__button {
   text-align: center; }
   .sectionIndex__button a {
-    margin: 2rem; }
+    margin: 2rem;
+    height: 45px;
+    width: 170px;
+    font-size: 2rem; }
 
 .container__sectionCards {
   margin-top: 10rem; }
@@ -114,11 +121,13 @@ body {
   color: #fff; }
 
 .container__tabla {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #fff;
   margin-top: 5rem; }
   .container__tabla thead {
     background: #0083b0; }
+  .container__tabla .btn {
+    font-size: 1.2rem; }
 
 .section__tips {
   margin-top: 6rem; }
@@ -131,11 +140,15 @@ body {
 
 .tips__accordion {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: transparent;
   border: none; }
+  .tips__accordion .accordion__body {
+    font-size: 1.7rem; }
+    .tips__accordion .accordion__body a {
+      color: #fff; }
   .tips__accordion .accordion__button {
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #fff;
     background: #0083b0; }
 
@@ -145,10 +158,16 @@ body {
   color: #fff;
   margin: 4rem; }
 
+.container__casosExito h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  background: #0083b0; }
+
 .container__casosExito p {
   font-size: 2rem;
   color: #fff;
-  margin-top: 4rem; }
+  background: #0083b0; }
 
 @media screen and (max-width: 768px) {
   body {
