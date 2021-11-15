@@ -18,9 +18,7 @@ body {
 .navbar__collapse {
   font-size: 2rem;
   display: flex;
-  justify-content: flex-end;
-  justify-content: center;
-  text-align: center;
+  justify-content: start;
   margin: 2rem;
   padding-right: 4rem;
   color: #fff; }
@@ -62,16 +60,10 @@ body {
     font-size: 2rem;
     color: #fff; }
 
-.clearfix img {
-  height: 500px;
-  width: 500px; }
-
 .sectionIndex__button {
   text-align: center; }
   .sectionIndex__button a {
     margin: 2rem;
-    height: 45px;
-    width: 170px;
     font-size: 2rem; }
 
 .container__sectionCards {
@@ -96,18 +88,6 @@ body {
   .sectionCards_card .card__badge {
     background: green;
     font-size: 1.5rem; }
-
-@media screen and (max-width: 768px) {
-  body {
-    background: #0083b0; }
-  .sectionCards_card {
-    background: #00b4db; } }
-
-@media screen and (max-width: 375px) {
-  body {
-    background: #00b4db; }
-  .sectionCards_card {
-    background: #0083b0; } }
 
 /*Seccion Empleos*/
 .container__tablaOfertas h1 {

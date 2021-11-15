@@ -20,9 +20,7 @@ body{
 .navbar__collapse{
     font-size: $parrafos;
     display: flex;
-    justify-content: flex-end;
-    justify-content: center;
-    text-align: center;
+    justify-content: start;    
     margin: 2rem;
     padding-right: 4rem;
     color: $color-letras;
@@ -70,18 +68,10 @@ body{
         color: $color-letras;
     }
 }
-.clearfix{
-    img{
-        height: 500px;
-        width: 500px;
-    }
-}
 .sectionIndex__button {
     text-align: center;
     a{
         margin: 2rem;
-        height: 45px;
-        width: 170px;
         font-size: $parrafos;
     }
 }
@@ -89,7 +79,7 @@ body{
     margin-top: 10rem;
 }
 .sectionCards_card{
-    background: #0083b0; 
+    background: $color-secundario; 
     border: none;
     h5{
         color: $color-letras;
@@ -110,22 +100,6 @@ body{
     .card__badge{
         background: green;
         font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    body{
-        background: $color-secundario;
-    }
-    .sectionCards_card{
-        background: $color-principal;
-    }
-}
-@media screen and (max-width: 375px) {
-    body{
-        background: $color-principal;
-    }
-    .sectionCards_card{
-        background: $color-secundario;
     }
 }
 /*Seccion Empleos*/
