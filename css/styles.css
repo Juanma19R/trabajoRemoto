@@ -108,6 +108,17 @@ body {
     background: #0083b0; }
   .container__tabla .btn {
     font-size: 1.2rem; }
+  .container__tabla .pointer {
+    cursor: pointer; }
+  .container__tabla .form-check-label {
+    font-size: 1.2rem; }
+
+#exampleModal1, #exampleModal2, #exampleModal3 {
+  font-size: 1.3rem; }
+  #exampleModal1 .form-select, #exampleModal2 .form-select, #exampleModal3 .form-select {
+    font-size: 1.2rem; }
+  #exampleModal1 .form-control, #exampleModal2 .form-control, #exampleModal3 .form-control {
+    font-size: 1.2rem; }
 
 .section__tips {
   margin-top: 6rem; }

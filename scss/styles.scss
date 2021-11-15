@@ -125,6 +125,21 @@ body{
     .btn{
         font-size: 1.2rem;
     }
+    .pointer{
+        cursor: pointer;
+    }
+    .form-check-label{
+        font-size: 1.2rem;
+    }
+}
+#exampleModal1, #exampleModal2, #exampleModal3{
+    font-size: 1.3rem;
+    .form-select{
+        font-size: 1.2rem;
+    }
+    .form-control{
+        font-size: 1.2rem;
+    }
 }
 .section__tips{
     margin-top: 6rem;
