@@ -48,27 +48,10 @@
         </nav>
     </header>
 
-    <main class="empleadores__Main">
-        <h1 class="animate__animated animate__heartBeat">Empleadores &#128188</h1>
-        <div class="container container__empleadores">
-            <div class="clearfix empleadores__clearfix">
-                <img src="../img/imagen-empleadores.svg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="imagen representativa de empleadores">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum placeat esse soluta qui aut dolore quas ullam ipsa blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio deserunt laboriosam. &#128187
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sed necessitatibus consequuntur soluta reprehenderit accusantium dolore non sint a eum at, voluptatibus velit voluptatem deleniti aperiam ab esse illum aspernatur, corporis magni, suscipit qui hic. &#127891
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam delectus nulla repellat iusto!, nobis ad tempora neque quam.. Minus corporis eius ullam. Aperiam sit ducimus illo ut numquam, deserunt nulla officia error ex minus. Perspiciatis ipsam ea odit inventore? &#128525
-                </p>
-            </div>
-        </div>
-    </main>
-
-    <section>
+    <main>
         <div class="container container_formEmpleador">
-            <h2 class="animate__animated animate__zoomIn">&#128209 ¡Carga tu busqueda! &#128209</h2>
+            <h1 class="animate__animated animate__flash">Empleadores &#128188</h1>
+            <h2>&#128209 ¡Carga tu busqueda! &#128209</h2>
             <form class="row g-3 containerForm__empleador">
                 <p>Datos de la empresa</p>
                 <div class="col-md-6">
@@ -117,14 +100,17 @@
                     <label for="inputZip" class="form-label containerForm__labels">CP/Zip</label>
                     <input type="text" class="form-control" id="inputZip">
                 </div>
-                <p>Datos del puesto</p>
+                <p>Nombre del puesto</p>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputNombre">
+                </div> 
+                <p>Descripcion del puesto</p>
                 <div class="form-floating containerForm__textArea">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Descripción del puesto</label>
-                </div>              
+                </div>             
                 <div class="col-md-3">
                     <label for="inputZip" class="form-label containerForm__labels">Salario</label>
-                    <input type="text" class="form-control" id="inputSalario">
+                    <input type="number" class="form-control" id="inputSalario">
                 </div>
                 <div class="col-md-3">
                     <label for="inputMoneda" class="form-label containerForm__labels">Moneda</label>
@@ -162,7 +148,25 @@
                 </div>
             </form>
         </div>
+    </main>
+
+    <section class="empleadores__Section">
+        <div class="container container__empleadores">
+            <div class="clearfix empleadores__clearfix">
+                <img src="../img/imagen-empleadores.svg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="imagen representativa de empleadores">
+                <p>
+                    Un empleador debe originar <strong>empleados comprometidos</strong> que logren la satisfacción del cliente y aseguren los resultados favorables para el negocio. &#127891
+                </p>
+                <p>
+                    Uno de los rasgos que mejor define a un empleador atractivo es el liderazgo humano. Un <strong>líder humano es una persona sólida y honesta</strong>; es quien involucra a sus empleados y con sus acciones logra que ellos adquieran valores que representan a la empresa al igual que despierta la fidelidad hacia la empresa. &#128525
+                </p>
+                <p>
+                    En medio de la nueva realidad laboral, <strong>es importante implementar estrategias que permitan compaginar productividad y flexibilidad</strong>. En ese sentido, la combinación home-office contribuye al logro de resultados sin dejar de lado las medidas de seguridad sanitaria. &#128187  
+                </p>
+            </div>
+        </div>
     </section>
+
     
     <footer class="container__footer">
         <img src="../img/logo-trabajo-remoto-sin-fondo.png" alt="Logo de Trabajo remoto">

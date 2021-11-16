@@ -18,9 +18,9 @@ body {
 .navbar__collapse {
   font-size: 2rem;
   display: flex;
-  justify-content: start;
-  margin: 2rem;
-  padding-right: 4rem;
+  justify-content: end;
+  text-align: right;
+  margin: 1rem;
   color: #fff; }
 
 .navbar__nav a {
@@ -143,46 +143,11 @@ body {
     color: #fff;
     background: #0083b0; }
 
-.container__casosExito h3 {
-  text-align: center;
-  font-size: 3rem;
-  color: #fff;
-  margin: 4rem; }
-
-.container__casosExito h5 {
-  text-align: center;
-  font-size: 3rem;
-  color: #fff;
-  background: #0083b0; }
-
-.container__casosExito p {
-  font-size: 2rem;
-  color: #fff;
-  background: #0083b0; }
-
-@media screen and (max-width: 768px) {
-  body {
-    background: #00b4db; }
-  .accordion__button {
-    background: #0083b0; } }
-
-@media screen and (max-width: 375px) {
-  body {
-    background: #00b4db; }
-  .accordion__button {
-    background: #0083b0; }
-  .container__casosExito p {
-    font-size: 2rem; } }
-
 /*Seccion Empleadores*/
-.empleadores__Main h1 {
+.container_formEmpleador h1 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 5rem;
-  color: #fff; }
-
-.empleadores__clearfix p {
-  font-size: 2rem;
   color: #fff; }
 
 .container_formEmpleador h2 {
@@ -190,19 +155,34 @@ body {
   font-size: 3rem;
   color: #fff; }
 
-.containerForm__empleador p {
-  font-size: 2rem;
-  color: #fff; }
+.containerForm__empleador {
+  margin-top: 5rem; }
+  .containerForm__empleador p {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: underline; }
+  .containerForm__empleador .form-control {
+    font-size: 1.5rem; }
 
 .containerForm__labels {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #fff; }
 
+.form-select {
+  font-size: 1.5rem; }
+
 .formEmpleador__checkbox {
-  font-size: 1.3rem; }
+  font-size: 1.5rem; }
 
 .containerForm__textArea {
   color: #000; }
+
+.empleadores__Section {
+  margin-top: 7rem; }
+
+.empleadores__clearfix p {
+  font-size: 2rem;
+  color: #fff; }
 
 /*Sección Nosotros*/
 .container__titulo h1 {

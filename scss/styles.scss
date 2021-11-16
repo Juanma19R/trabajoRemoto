@@ -20,9 +20,9 @@ body{
 .navbar__collapse{
     font-size: $parrafos;
     display: flex;
-    justify-content: start;    
-    margin: 2rem;
-    padding-right: 4rem;
+    justify-content: end;
+    text-align: right;    
+    margin: 1rem;
     color: $color-letras;
 }
 .navbar__nav{
@@ -36,7 +36,7 @@ body{
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
-.logo__Nav {
+.logo__Nav{
     width: 140px;
     height: 140px;
 }
@@ -169,62 +169,14 @@ body{
         background: $color-secundario;
     }
 }
-.container__casosExito{
-    h3{
-        text-align: center;
-        font-size: $subtitulos;
-        color: $color-letras;
-        margin: 4rem;
-    }
-    h5{
-        text-align: center;
-        font-size: $subtitulos;
-        color: $color-letras;
-        background: $color-secundario;
-    }
-    p{
-        font-size: $parrafos;
-        color: $color-letras;
-        background: $color-secundario;
-    }
-}
-@media screen and (max-width: 768px) {
-    body{
-        background: $color-principal;
-    }
-    .accordion__button{
-        background: $color-secundario;
-    }
-}
-@media screen and (max-width: 375px) {
-    body{
-        background: $color-principal;
-    }
-    .accordion__button{
-        background: $color-secundario;
-    }
-    .container__casosExito{
-        p{
-            font-size: $parrafos;
-        }
-    }
-}
 /*Seccion Empleadores*/
-.empleadores__Main{
+.container_formEmpleador{
     h1{
         text-align: center;
         font-size: $titulos;
         margin-bottom: 5rem;
         color: $color-letras;
     }
-} 
-.empleadores__clearfix{
-    p{
-        font-size: $parrafos;
-        color: $color-letras;
-    }
-} 
-.container_formEmpleador{
     h2{
         text-align: center;
         font-size: $subtitulos;
@@ -232,21 +184,38 @@ body{
     }
 }
 .containerForm__empleador{
+    margin-top: 5rem;
     p{
         font-size: $parrafos;
         color: $color-letras;
+        text-decoration: underline;
+    }
+    .form-control{
+        font-size: 1.5rem;
     }
 }
 .containerForm__labels{
-    font-size: ($subtitulos/2)-0.2;
+    font-size: 1.5rem;
     color: $color-letras;
 }
+.form-select{
+    font-size: 1.5rem;
+}
 .formEmpleador__checkbox{
-    font-size: ($subtitulos/2)-0.2;
+    font-size: 1.5rem;
 }
 .containerForm__textArea{
     color: #000;
 }
+.empleadores__Section{
+    margin-top: 7rem;
+}
+.empleadores__clearfix{
+    p{
+        font-size: $parrafos;
+        color: $color-letras;
+    }
+} 
 /*Sección Nosotros*/
 .container__titulo{
     h1{
