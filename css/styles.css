@@ -8,7 +8,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Sen', sans-serif;
@@ -202,10 +203,6 @@ body {
   color: #fff;
   margin: 3rem; }
 
-.team__cards--size {
-  width: 350px;
-  height: 350px; }
-
 .team__cards--background {
   background-color: #0083b0; }
 
@@ -226,11 +223,11 @@ body {
 
 .card__info p {
   font-size: 1.5rem;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
-.container_sectionContacto {
-  margin-top: 4rem;
-  font-size: 1.5rem; }
+.container__sectionContacto {
+  margin-top: 4rem; }
 
 .container__form {
   color: #fff; }
@@ -238,9 +235,12 @@ body {
     font-size: 3rem;
     margin: 2rem;
     text-align: center; }
+  .container__form .form-label, .container__form .form-control {
+    font-size: 1.5rem; }
 
 .form__checkbox {
-  margin: 1rem; }
+  margin: 1rem;
+  font-size: 1.5rem; }
 
 .container__mapa {
   text-align: center;
@@ -251,11 +251,13 @@ body {
     text-align: center; }
 
 .mapa__iframe {
-  width: 400px;
+  width: 300px;
   height: 250px; }
 
 .container__seccionRedes {
-  color: #fff; }
+  color: #fff;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
   .container__seccionRedes h4 {
     font-size: 2.5rem; }
   .container__seccionRedes a {
@@ -278,10 +280,6 @@ body {
   text-align: center; }
   .container_blogHead h1 {
     font-size: 4rem;
-    color: #fff; }
-  .container_blogHead p {
-    font-size: 2rem;
-    margin: 3rem;
     color: #fff; }
 
 .container__cardGroup {
@@ -310,6 +308,26 @@ body {
 .container__error404 img {
   height: 1000px;
   width: 1000px; }
+
+/*Boton volver arriba*/
+.boton__VolverArriba {
+  position: fixed;
+  margin-bottom: 120px;
+  margin-right: 10px;
+  bottom: 30px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background: #00b4db;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease; }
+  .boton__VolverArriba i {
+    color: #fff;
+    font-size: 20px; }
+
+.boton__VolverArriba:hover {
+  transform: scale(1.2); }
 
 /*Footer*/
 .container__footer img {

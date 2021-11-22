@@ -11,6 +11,7 @@
 } 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Sen', sans-serif;
@@ -239,10 +240,6 @@ body{
     }
 }
 .team__cards{
-    &--size{
-        width: 350px;
-        height: 350px;
-    }
     &--background{
         background-color: $color-secundario;
     }
@@ -266,11 +263,11 @@ body{
     p{
         font-size: $subtitulos/2;
         color: $color-letras;
+        text-align: center;
     }
 }
-.container_sectionContacto {
+.container__sectionContacto{
     margin-top: 4rem;
-    font-size: $subtitulos/2;
 }
 .container__form{
     color: $color-letras;
@@ -279,9 +276,13 @@ body{
         margin: 2rem;
         text-align: center;
     }
+    .form-label, .form-control{
+        font-size: 1.5rem;
+    }
 }
 .form__checkbox{
     margin: 1rem;
+    font-size: 1.5rem;
 }
 .container__mapa{
     text-align: center;
@@ -293,11 +294,13 @@ body{
     }
 }
 .mapa__iframe{
-    width: 400px;
+    width: 300px;
     height: 250px;
 }
 .container__seccionRedes{
     color: $color-letras;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     h4{
         font-size: $parrafos +0.5;
     }
@@ -322,11 +325,6 @@ $colors: (
     text-align: center;
     h1{
         font-size: $titulos;
-        color: $color-letras;
-    }
-    p{
-        font-size: $parrafos;
-        margin: 3rem;
         color: $color-letras;
     }
 }
@@ -361,6 +359,27 @@ $colors: (
         height: 1000px;
         width: 1000px;
     }
+}
+/*Boton volver arriba*/
+.boton__VolverArriba{
+    position: fixed;
+    margin-bottom: 120px;
+    margin-right: 10px;
+    bottom: 30px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background: $color-principal;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+    i{
+        color: #fff;
+        font-size: 20px;
+    }
+}
+.boton__VolverArriba:hover{
+    transform: scale(1.2);
 }
 /*Footer*/
 .container__footer{

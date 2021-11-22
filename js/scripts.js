@@ -57,3 +57,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+//Boton ir arriba
+const irArriba = document.querySelector(".boton__VolverArriba");
+
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+        irArriba.style.right = -100 + "px";
+    } else {
+        irArriba.style.right = 5 + "px";
+    }
+});
