@@ -349,9 +349,16 @@ $colors: (
         color: $color-letras;
         font-size: $subtitulos/2;
     }
+    a{
+        color: #fff;
+    }
 }
 .cardGoup__textoFooter{
     font-size: $parrafos -1;
+}
+.enlace__LeerMas{
+    font-size: $parrafos;
+    color: $color-letras;
 }
 /*Error 404*/
 .container__error404{

@@ -301,8 +301,15 @@ body {
   color: #fff;
   font-size: 1.5rem; }
 
+.cardGroup_card a {
+  color: #fff; }
+
 .cardGoup__textoFooter {
   font-size: 2rem -1; }
+
+.enlace__LeerMas {
+  font-size: 2rem;
+  color: #fff; }
 
 /*Error 404*/
 .container__error404 img {
